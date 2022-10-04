@@ -1,23 +1,12 @@
-
 const screen = document.querySelector('#screen');
-const deleteNum = document.querySelector('#delete');
-const clearNum = document.querySelector('#clear');
-const one = document.querySelector('#1');
-const two = document.querySelector('#2');
-const three = document.querySelector('#4');
-const five = document.querySelector('#5');
-const six = document.querySelector('#6');
-const seven = document.querySelector('#seven');
-const eight = document.querySelector('#eight');
-const nine = document.querySelector('#nine');
-const dot = document.querySelector('#dot');
-const mutiply = document.querySelector('#mutiply');
-const division = document.querySelector('#division');
-const addition = document.querySelector('#addition');
-const minus = document.querySelector('#minus');
-const equalTo = document.querySelector('#equalto');
+const allButtons = document.querySelectorAll('.button');
 
-
+allButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+        const value = e.target.dataset.value
+        screen.innerText += value 
+    })
+})
 function add(a,b) {
     c = a + b;
     return c;
@@ -42,16 +31,7 @@ function operate() {
     add();
 } 
 
-
-function displayed() {
-    document.addEventListener('click', 
-        () => { 
-
-        });
-}
-
-operate();
-//console.log(`operate = ${}`);
+console.log(screen);
 
 
 mutiply(4,8);

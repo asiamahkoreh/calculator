@@ -18,7 +18,7 @@ body {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr;
-    background-color: rgb(24, 18, 18);
+    background-color: rgb(44, 42, 42);
     color: gray;
     padding: 20px;
     width: 450px;
@@ -36,18 +36,30 @@ body {
     height: 100px;
     width: 395px;
     border-radius: 10px;
+    color: black;
+    text-align: right;
+    padding-top: 40px;
+    padding-right: 20px;
 }
 
 #clear {
-    background-color: rgb(202, 170, 231);
+    background-color: rgb(193, 144, 240);
+}
+
+#clear:hover {
+    background-color: rgb(193, 144, 240, 0.9);
 }
 
 .remove {
     font-size: 2rem;
     padding: 12px 48px;
-    background-color: pink;
+    background-color: rgb(238, 125, 144);
     border-radius: 8px;
     margin: 5px;
+}
+
+.remove:hover {
+    background-color: rgb(235, 119, 139, 0.9);
 }
 
 
@@ -57,7 +69,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
 }
 
-.number, .operator {
+.button {
     background-color: rgb(212, 209, 209);
     padding: 6px;
     margin: 6px;
@@ -67,11 +79,11 @@ body {
     border-color: whitesmoke;
 }
 
-.number:hover {
+.button:hover {
     background-color: rgba(212, 209, 209, 0.7);
 }
 
-.operator:hover {
+.button:hover {
     background-color: rgba(212, 209, 209, 0.7);;
 }
 
