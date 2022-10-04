@@ -43,7 +43,12 @@ function operate() {
 } 
 
 
-function displayed() {}
+function displayed() {
+    document.addEventListener('click', 
+        () => { 
+
+        });
+}
 
 operate();
 //console.log(`operate = ${}`);

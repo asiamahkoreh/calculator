@@ -22,7 +22,7 @@ body {
     color: gray;
     padding: 20px;
     width: 450px;
-    height: 500px;
+    height: 550px;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -44,7 +44,7 @@ body {
 
 .remove {
     font-size: 2rem;
-    padding: 8px 48px;
+    padding: 12px 48px;
     background-color: pink;
     border-radius: 8px;
     margin: 5px;
@@ -58,12 +58,21 @@ body {
 }
 
 .number, .operator {
-    background-color: gray;
+    background-color: rgb(212, 209, 209);
     padding: 6px;
     margin: 6px;
     cursor: pointer;
     border-radius: 8px;
-    color: aqua;
+    color: black;
+    border-color: whitesmoke;
+}
+
+.number:hover {
+    background-color: rgba(212, 209, 209, 0.7);
+}
+
+.operator:hover {
+    background-color: rgba(212, 209, 209, 0.7);;
 }
 
 img {
